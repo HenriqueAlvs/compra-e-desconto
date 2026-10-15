@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Desconto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="card">
+        <h1>Calculadora de Desconto</h1>
+        
+        <!-- Formulário para leitura do valor -->
+        <form id="form-desconto">
+            <div class="input-group">
+                <label for="valor-compra">Valor Total da Compra (R$):</label>
+                <input type="number" id="valor-compra" step="0.01" placeholder="Ex: 150.00" required>
+            </div>
+
+            <button type="submit" id="btn-calcular">Calcular Desconto</button>
+        </form>
+
+        <!-- Área onde o seu JS vai exibir os resultados -->
+        <div id="resultado" class="resultado hidden">
+            <h2>Resultado:</h2>
+            <p>Valor do Desconto: <span id="valor-desconto">R$ 0,00</span></p>
+            <p>Total com Desconto: <span id="total-com-desconto">R$ 0,00</span></p>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
